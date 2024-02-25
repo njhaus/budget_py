@@ -40,11 +40,11 @@ def main():
     def create(new):
         if new:
             print("\nBegin by creating some categories!")
-            print("(Enter -b to go back, -q to quit, or -d if you're done creating categories.")
+            print("(Enter -b to go back, -q to quit, or -d if you're done creating categories.\n")
         else:
             print("\nCreate a new category!")
         while True:
-            category_name = input("Category Name: ")
+            category_name = input("Enter Category Name: ")
             if check_for_cmd(category_name):
                     break
             if not category_name:
@@ -52,7 +52,7 @@ def main():
             else:
                 break
         while True:
-            category_allotted = input("Amount of $ planned for this category: ")
+            category_allotted = input("Enter amount of $ planned for this category: ")
             if check_for_cmd(category_allotted):
                 break
             try:
